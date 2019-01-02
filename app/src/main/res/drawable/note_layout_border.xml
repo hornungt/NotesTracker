@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="5sp"/>
+    <padding android:left="2sp" android:right="2sp" android:top="10sp" android:bottom="3sp"/>
+    <stroke android:width="2sp" android:color="@color/colorPrimary"/>
+    <!--<solid android:color="@color/note_layout_color"/>-->
+</shape>

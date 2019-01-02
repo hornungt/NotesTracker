@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/app_bar"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="@dimen/note_layout_preview_margin">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/note_view_list"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/app_bar_main">
+    </LinearLayout>
+</ScrollView>

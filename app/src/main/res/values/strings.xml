@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NotesTracker</string>
+    <string name="no_category_selected">Select a category...</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_categories_header_title">Categories</string>
+    <string name="nav_header_subtitle">Testing</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_delete_category">Delete Category</string>
+    <string name="action_edit">Edit Category</string>
+    <string name="delete_note_dialog">Delete Note</string>
+    <string name="nav_categories_footer_title">New Category? &#8230;</string>
+    <string name="insert_category_title_hint">Category name &#8230;</string>
+    <string name="insert_note_title_hint">Note title &#8230;</string>
+    <string name="insert_note_description_hint">Description &#8230;</string>
+    <string name="invalid_category_alert">Invalid category name</string>
+</resources>

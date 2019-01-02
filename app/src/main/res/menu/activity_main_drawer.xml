@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="@string/nav_categories_footer_title"
+        android:id="@+id/create_category_button">
+        <!--todo: (lowest priority right now) add a search function in the nav drawer that finds the category name that the user is looking for-->
+        <menu>
+            <item
+                android:id="@+id/nav_create_new_category_fragment"
+                android:title="Create Category" />
+        </menu>
+    </item>
+
+</menu>

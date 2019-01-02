@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/note_layout_height"
+    android:layout_margin="@dimen/note_layout_margin"
+    android:background="@drawable/note_layout_border">
+
+    <TextView
+        android:id="@+id/note_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="@dimen/note_layout_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/note_view_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/note_layout_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/note_view_title"/>
+
+    <TextView
+        android:id="@+id/note_view_last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginRight="@dimen/note_layout_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
