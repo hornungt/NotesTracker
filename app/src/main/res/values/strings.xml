@@ -14,4 +14,18 @@
     <string name="insert_note_title_hint">Note title &#8230;</string>
     <string name="insert_note_description_hint">Description &#8230;</string>
     <string name="invalid_category_alert">Invalid category name</string>
+    <string name="instructions">
+        Thanks for choosing NotesTracker!\n\n
+        Instructions:\n
+        Swipe left or click the three horizontal lines to manage your note categories.\n
+        <b>To create a category,</b> press the "Create Category" button.
+        When you create a new category, you will be prompted to enter the name of the new category.\n
+        <b>To delete or edit a category,</b> press the three vertical dots in the top corner,
+        and click on the desired option.\n
+        <b>To create a note,</b> navigate to the category you want to put the note under, then
+        press the \'+\' button in the bottom left corner.\n
+        <b>To edit or view a note,</b> tap on the note.\n
+        <b>To delete a note,</b> hold down on the note until the prompt shows up.\n
+
+    </string>
 </resources>

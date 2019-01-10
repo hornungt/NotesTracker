@@ -40,14 +40,6 @@ public class DeleteCategoryFragment extends DialogFragment {
         return dialogBuilder.create();
     }
 
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        getDialog().getWindow().setSoftInputMode(
-                WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-    }
-
     @Override
     public void onAttach(Context context){
         super.onAttach(context);

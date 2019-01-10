@@ -24,11 +24,6 @@ public abstract class NoteFragment extends DialogFragment {
     private OnDataPass passer;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.note_dialog, container, false);
-    }
-
-    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         final View createNoteDialog = getActivity().getLayoutInflater().inflate(R.layout.note_dialog, null);

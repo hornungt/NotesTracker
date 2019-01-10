@@ -14,6 +14,11 @@ public class NotePreviewLayout extends ConstraintLayout {
     private TextView title, description, lastUpdated;
     private Note note;
 
+    /**
+     * constructor
+     * @param context the context of the app
+     * @param note the note that the NotePreviewLayout is displaying
+     */
     public NotePreviewLayout(Context context, @NonNull  Note note){
         super(context);
         this.note = note;
@@ -22,6 +27,10 @@ public class NotePreviewLayout extends ConstraintLayout {
         //listeners are assigned in MainActivity
     }
 
+    /**
+     * sets up the title, description, and lastUpdated portions of the layout
+     * @param context the context of the app
+     */
     private void init(Context context){
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.note_preview_layout, this);

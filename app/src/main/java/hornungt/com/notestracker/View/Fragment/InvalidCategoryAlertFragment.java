@@ -25,11 +25,6 @@ public class InvalidCategoryAlertFragment extends DialogFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.invalid_category_dialog, container, false);
-    }
-
-    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         final View createNoteDialog = getActivity().getLayoutInflater().inflate(R.layout.invalid_category_dialog, null);
@@ -38,13 +33,6 @@ public class InvalidCategoryAlertFragment extends DialogFragment {
             if (dialog != null) dialog.dismiss();
         });
         return dialogBuilder.create();
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        getDialog().getWindow().setSoftInputMode(
-                WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
     }
 
 }

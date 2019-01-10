@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.TypedValue;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import hornungt.com.notestracker.Controller.NoteController;
 import hornungt.com.notestracker.Model.Note;
@@ -62,6 +64,10 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         list = findViewById(R.id.note_view_list);
+        TextView instructions = new TextView(this);
+        instructions.setTextSize(TypedValue.COMPLEX_UNIT_SP, 23);
+        instructions.setText(R.string.instructions);
+        list.addView(instructions);
 
         categoryMenu = navigationView.getMenu().addSubMenu("Categories");
         refreshMenu(null);

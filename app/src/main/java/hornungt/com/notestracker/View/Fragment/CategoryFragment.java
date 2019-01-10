@@ -22,11 +22,6 @@ public abstract class CategoryFragment extends DialogFragment {
     private OnDataPass passer;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.category_dialog, container, false);
-    }
-
-    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
         final View categoryDialog = getActivity().getLayoutInflater().inflate(R.layout.category_dialog, null);
