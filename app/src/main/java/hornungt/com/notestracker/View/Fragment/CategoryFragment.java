@@ -67,5 +67,9 @@ public abstract class CategoryFragment extends DialogFragment {
 
     protected OnDataPass getPasser() { return passer; }
 
+    /**
+     * abstract method to pass data from the fragment to the MainActivity
+     * @param categoryTitle the title of the new category
+     */
     protected abstract void passCategoryData(String categoryTitle);
 }

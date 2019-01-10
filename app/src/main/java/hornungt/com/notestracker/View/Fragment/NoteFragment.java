@@ -104,6 +104,11 @@ public abstract class NoteFragment extends DialogFragment {
 
     protected OnDataPass getPasser() { return passer; }
 
+    /**
+     * abstract method for passing data about the note to the MainActivity
+     * @param title
+     * @param description
+     */
     protected abstract void passNoteData(String title, String description);
 
 }

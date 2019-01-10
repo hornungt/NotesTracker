@@ -43,6 +43,10 @@ public class NotePreviewLayout extends ConstraintLayout {
         lastUpdated.setText(note.getUpdatedOnString()); //todo: test what this is setting the text to
     }
 
+    /**
+     * accessor for the Note being displayed
+     * @return the Note being displayed
+     */
     public Note getNote() {
         return note;
     }

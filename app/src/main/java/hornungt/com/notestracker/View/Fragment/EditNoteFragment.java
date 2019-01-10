@@ -31,6 +31,11 @@ public class EditNoteFragment extends NoteFragment {
         return dialog;
     }
 
+    /**
+     * passes data from the fragment to the MainActivity
+     * @param title the title of the newly created note
+     * @param description the description of the newly created note
+     */
     @Override
     protected void passNoteData(String title, String description) {
         getPasser().passEditNoteData(original, title, description);
