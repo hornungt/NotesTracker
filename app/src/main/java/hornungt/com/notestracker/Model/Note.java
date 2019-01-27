@@ -60,6 +60,16 @@ public class Note {
     public Calendar getCreatedOn() { return createdOn; }
 
     /**
+     * gets a formatted String for the date of creation
+     * @return String representing day/month/year
+     */
+    public String getCreatedOnString(){
+        return createdOn.get(Calendar.DAY_OF_MONTH) + "-" +
+            (createdOn.get(Calendar.MONTH) + 1) + "-" +
+            createdOn.get(Calendar.YEAR);
+}
+
+    /**
      * gets a formatted String for the last edited date
      * @return String representing day/month/year
      */
@@ -92,11 +102,15 @@ public class Note {
             Note temp = (Note)obj;
             return this.getTitle().equals(temp.getTitle())
                     && this.getDescription().equals(temp.getDescription())
-                    && this.getCreatedOn().equals(temp.getCreatedOn());
+                    && this.getCreatedOnString().equals(temp.getCreatedOnString());
         }
         return false;
     }
 
+    /**
+     * title, description, createdOn (dd/MM/yy), updatedOn (dd/MM/yy)
+     * @return a string representation of a Note
+     */
     @Override
     public String toString(){
         return title + "|" + description + "|" +

@@ -15,25 +15,51 @@ public class NoteCategory extends ArrayList<Note>{
 
     private String name;
 
+    /**
+     * constructor
+     * @param name the name of the category
+     */
     public NoteCategory(String name){
         this.name = name;
     }
 
+    /**
+     * constructor
+     * @param name the name of the category
+     * @param notes the notes that belong to the category
+     */
     public NoteCategory(String name, ArrayList<Note> notes){
         this.name = name;
         this.addAll(notes);
     }
 
+    /**
+     * adds a List of Notes to the category
+     * @param notes the notes to be added
+     */
     public void add(List<Note> notes){
         for (Note note : notes) {
             add(note);
         }
     }
 
+    /**
+     * accessor for name
+     * @return the name of the category
+     */
     public String getName(){ return name; }
 
+    /**
+     * mutator for name
+     * @param name the new name of the category
+     */
     public void setName(String name){ this.name = name; }
 
+    /**
+     * parses a List of Notes from a string, used for reading note data from a text file
+     * @param rawData the formatted string from which notes are parsed
+     * @return the list of notes parsed from the string
+     */
     public static List<Note> parseNotes(String rawData){
         String[] data = rawData.split("\\*");
         List<Note> notes = new ArrayList<>();
@@ -62,15 +88,12 @@ public class NoteCategory extends ArrayList<Note>{
         return notes;
     }
 
-    public boolean contains(String noteName){
-        for (Note note : this) {
-            if (noteName.equals(note.getTitle())) return true;
-        }
-        return false;
-    }
-
+    /**
+     * formats a string from the Notes contained in NoteCategory that is used for writing to a file
+     * @return a string representation of the NoteCategory
+     */
     @Override
-    public String toString(){ // formatted for writing to file
+    public String toString(){
         String msg = "";
         for (int i = 0; i < size(); i++) {
             msg += this.get(i).toString() + "*";
